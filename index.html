@@ -1,0 +1,42 @@
+index.html.
+<!DOCTYPE html>  <html>  
+<head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <title>Security Awareness Demo</title>  
+  <style>  
+    body {  
+      font-family: Arial;  
+      background: #f2f2f2;  
+      padding: 40px 20px;  
+    }  
+    .box {  
+      max-width: 350px;  
+      margin: auto;  
+      background: white;  
+      padding: 25px;  
+      border-radius: 12px;  
+    }  
+    input, button {  
+      width: 100%;  
+      padding: 12px;  
+      margin-top: 12px;  
+      box-sizing: border-box;  
+    }  
+    button {  
+      cursor: pointer;  
+    }  
+  </style>  
+</head>  
+<body>  <div class="box">  
+  <h2>Security Training</h2>  
+  <p>This is a simulated login page.</p>    <input id="email" placeholder="Training email">  
+  <input id="password" type="password" placeholder="Dummy password">  <button onclick="check()">Sign in</button>
+
+  <p id="message"></p>  
+</div>  <script>  
+function check() {  
+  document.getElementById("message").innerHTML =  
+    "⚠️ Training simulation: Never enter your real password into an unexpected link.";  
+}  
+</script>  </body>  
+</html>
